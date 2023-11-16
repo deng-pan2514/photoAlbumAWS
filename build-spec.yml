@@ -16,4 +16,5 @@ phases:
       - zip -r ../search-photos.zip .
 artifacts:
   files:
+    - deploy-spec.yml
     - search-photos.zip
