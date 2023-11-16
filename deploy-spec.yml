@@ -3,10 +3,11 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - echo Downloading artifact...
+      - echo "List all files in the CodeBuild source directory..."
+      - ls -al "$CODEBUILD_SRC_DIR"
   build:
     commands:
       - ls -al
       - pwd
       - echo Deploying the Lambda function...
-      - aws lambda update-function-code --function-name search-photos --zip-file fileb://search-photos.zip
+      - aws lambda update-function-code --function-name search-photos --zip-file fileb://$CODEBUILD_SRC_DIR/search-photos.zip
