@@ -7,4 +7,4 @@ phases:
   build:
     commands:
       - echo Deploying the Lambda function...
-      - aws lambda update-function-code --function-name search-photos --zip-file fileb://search-photo.zip
+      - aws lambda update-function-code --function-name search-photos --zip-file fileb://search-photos.zip

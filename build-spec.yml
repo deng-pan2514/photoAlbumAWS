@@ -12,8 +12,8 @@ phases:
   build:
     commands:
       - echo Building the package...
-      - cd search-photo
-      - zip -r ../search-photo.zip .
+      - cd search-photos
+      - zip -r ../search-photos.zip .
 artifacts:
   files:
-    - search-photo.zip
+    - search-photos.zip
