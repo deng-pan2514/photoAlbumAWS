@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.11 # 或您使用的其他运行时版本
+    commands:
+      - echo Installing dependencies...
+  pre_build:
+    commands:
+      - echo Pre-build stage...
+  build:
+    commands:
+      - echo Building the package...
+      - cd search-photo
+      - zip -r ../search-photo.zip .
+artifacts:
+  files:
+    - search-photo.zip
