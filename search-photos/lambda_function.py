@@ -21,7 +21,6 @@ auth = get_awsauth('us-east-1', 'es')
 
 
 def lambda_handler(event, context):
-    print("codepipeline test")
     print("event: ")
     print(event)
     #last_user_message = event['params']['querystring']['q']
