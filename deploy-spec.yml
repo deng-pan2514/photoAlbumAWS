@@ -6,5 +6,7 @@ phases:
       - echo Downloading artifact...
   build:
     commands:
+      - ls -al
+      - pwd
       - echo Deploying the Lambda function...
       - aws lambda update-function-code --function-name search-photos --zip-file fileb://search-photos.zip
